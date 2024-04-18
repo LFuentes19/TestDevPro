@@ -1,0 +1,36 @@
+Test scenarios for task 1.1:
+
+1. Test Case Name: Test INFO Message Logging
+   - Description: Verify that the logger correctly logs an INFO level message with the current timestamp.
+   - Steps to Reproduce:
+     1. Call the `LogMessage` function with the parameters: "application.log", "User logged in", and "INFO".
+     2. Check the contents of the application.log file.
+   - Expected Result: The application.log file contains a line with the format [YYYY-MM-DD HH:MM:SS] [INFO] User logged in.
+
+2. Test Case Name: Test WARNING Message Logging
+   - Description: Verify that the logger correctly logs a WARNING level message with the current timestamp.
+   - Steps to Reproduce:
+     1. Call the `LogMessage` function with the parameters: "application.log", "Failed login attempt", and "WARNING".
+     2. Check the contents of the application.log file.
+   - Expected Result: The application.log file contains a line with the format [YYYY-MM-DD HH:MM:SS] [WARNING] Failed login attempt.
+
+3. Test Case Name: Test ERROR Message Logging
+   - Description: Verify that the logger correctly logs an ERROR level message with the current timestamp.
+   - Steps to Reproduce:
+     1. Call the `LogMessage` function with the parameters: "application.log", "Database connection failed", and "ERROR".
+     2. Check the contents of the application.log file.
+   - Expected Result: The application.log file contains a line with the format [YYYY-MM-DD HH:MM:SS] [ERROR] Database connection failed.
+
+4. Test Case Name: Test Multiple Message Logging
+   - Description: Verify that the logger correctly logs multiple messages with different levels and timestamps.
+   - Steps to Reproduce:
+     1. Call the `LogMessage` function multiple times with different messages and levels.
+     2. Check the contents of the application.log file.
+   - Expected Result: The application.log file contains lines for each logged message with their respective timestamps and levels.
+
+5. Test Case Name: Test Logging to Different Files
+   - Description: Verify that the logger correctly logs messages to different files based on the specified file paths.
+   - Steps to Reproduce:
+     1. Call the `LogMessage` function with different file paths for different messages.
+     2. Check the contents of each specified log file.
+   - Expected Result: Each specified log file contains the corresponding logged messages with their respective timestamps and levels.
